@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h3>Today's Budget: ₦10,000</h3>
+        <div class="alert alert-danger p-2 text-center" style="display: none;" id="disp">Please fill out the details</div>
+        <input type="text" placeholder="Name" id="num">
+        <input type="text" placeholder="Description of the Goods" id="description" >
+        <input type="number" placeholder="Enter expense amount" id="expenses">
+        <p id="error"></p>
+        <button onclick="clicked()">Submit</button>
+        <p>Remaining Budget: <span id="remainingBudget">₦10,000</span></p>
+        
+        <h4>Expense History:</h4>
+        <ul id="expenseList"></ul>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
