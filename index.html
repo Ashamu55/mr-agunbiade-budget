@@ -4,21 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <center>
     <div>
+        <h1>Mr. Favour Agunbiade</h1>
+        <h2>Budget App</h2>
+    </div>
+    <div class="omah-one">
+        <div class="image-one"></div>
+        <div class="filled">
         <h3>Today's Budget: ₦10,000</h3>
         <div class="alert alert-danger p-2 text-center" style="display: none;" id="disp">Please fill out the details</div>
-        <input type="text" placeholder="Name" id="num">
-        <input type="text" placeholder="Description of the Goods" id="description" >
-        <input type="number" placeholder="Enter expense amount" id="expenses">
+            <input type="text" placeholder="Name" id="num">
+            <input type="text" placeholder="Description of the Goods" id="description" >
+            <input type="number" placeholder="Enter expense amount" id="expenses">
         <p id="error"></p>
+
         <button onclick="clicked()">Submit</button>
         <p>Remaining Budget: <span id="remainingBudget">₦10,000</span></p>
-        
         <h4>Expense History:</h4>
         <ul id="expenseList"></ul>
     </div>
+    </div>
+    </center>
 
 
     <script src="script.js"></script>

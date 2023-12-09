@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+center{
+    background-image: url(image/pexels-asad-photo-maldives-3293148.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.omah-one{
+    width: 80%;
+    height: 500px;
+    /* border: 1px solid #ccc; */
+    box-shadow: 3px 3px 9px 5px rgba(255, 255, 255, 0.29);
+}
