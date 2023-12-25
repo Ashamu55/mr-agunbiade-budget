@@ -10,16 +10,17 @@ function clicked() {
     } else if (exp > remainingBudget) {
         document.getElementById("error").innerHTML = "Budget limit exceeded!";
     } else {
+        document.getElementById('num').value = ""
+        document.getElementById('description').value = ""
+        document.getElementById('expenses').value = ""
         disp.style.display = "none"
         document.getElementById("error").innerHTML = "";
         remainingBudget -= exp;
         document.getElementById("remainingBudget").innerHTML = `₦${remainingBudget}:`;
         document.getElementById("expenseList").innerHTML += `
-        <p>${num}</p>
-        <p>${dec}</p>
-        <P style="display:flex;">Total: ₦${exp}</P>`;
+        <div style="display:flex;">
+        <p>${num}</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p>${dec}</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <P>Amount: - ₦${exp}</P></div>`;
     }
-    document.getElementById('num').value = ""
-    document.getElementById('description').value = ""
-    document.getElementById('expenses').value = ""
 }
